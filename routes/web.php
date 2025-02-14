@@ -3,12 +3,16 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\facades\Response;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('Home');
+// });
 
-Route::get('/belajar', function () {
-    return view('belajar');
+// Route::get('/login', function(){
+//     return view('Login');
+// });
+
+Route::get('/', function () {
+    return view('Romantic');
 });
 
 // Route::get('/style', function () {

@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+    <title>@yield('title', 'project badut')</title>
     @if (!app()->environment('testing'))
         @vite(['resources/css/main.scss'])
     @endif
 </head>
 <body>
+    
     <div class="navbar">
         <div class="navbar-logo">
             <!-- <i> belum ada icon </i> -->
@@ -28,18 +29,7 @@
         </div>
     </div>
     <main>
-        <div class="home-layout">
-            <div class="home-content-title">
-                <p class="home-title">
-                    Selamat Datang
-                </p>
-                <p class="home-subtitle">
-                    Website ini memberikan informasi tentang
-                    produk sabun dan shampoo serta infomasi mendalam
-                    tentang komposisi yang ada
-                </p>
-            </div>
-        </div>
+        @yield('content')
     </main>
     <footer>
         <div class="footer-logo">
